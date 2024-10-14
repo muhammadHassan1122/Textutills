@@ -27,7 +27,7 @@ export default function Navbar(props) {
   <input class="form-check-input" onClick={()=>props.toggleMode()} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
   <label class="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
 </div>
-<button type="button" onClick={()=>props.buttonMode()} class="btn btn-secondary">Convert into Secondary</button>
+{/* <button type="button" onClick={()=>props.buttonMode()} class="btn btn-secondary">Convert into Secondary</button> */}
     </div>
   </div>
 </nav>

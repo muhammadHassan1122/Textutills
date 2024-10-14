@@ -27,13 +27,13 @@ function App() {
     if(mode === 'light'){
       setMode('dark'); 
       document.body.style.backgroundColor = '#042743';
-      document.title = 'Textutils - DarkMode'
+      // document.title = 'Textutils - DarkMode'
       // showAlert("Dark mode is Enable", "success");
     }
     else{
       setMode('light'); 
       document.body.style.backgroundColor = 'white';
-      document.title = 'Textutils - LightMode'
+      // document.title = 'Textutils - LightMode'
       // showAlert("Light mode is Enable", "success");
 
     }
@@ -62,10 +62,10 @@ function App() {
 
   
  <Routes>
-            <Route path="/About" element={<About/>} />
+            <Route path="/About" element={<About  mode={mode}/>} />
 </Routes>
 < Routes>
-            <Route path="/" element={<FormText form="Enter text to analyze" Buttontitle="Convert into uppercase" Buttontitle1="Convert into Lowercase" mode={mode}/>} />
+            <Route path="/" element={<FormText form="Try Textutils - Word Counter, Character Counter, Clear All Text" Buttontitle="Convert into uppercase" Buttontitle1="Convert into Lowercase" mode={mode}/>} />
 </Routes>
          
       
